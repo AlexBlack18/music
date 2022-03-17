@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Winx Club</title>
+        <link rel="shortcut icon" href="../../icon/winxclub/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="../../CSS/style.css">
+    </head>
+    <body>
+    </table>
+    <script>
+        function cm(file, event){
+            document.getElementById('nowplaying').innerText = event.srcElement.innerText;
+            const player = document.getElementById('player')
+            player.src=file;
+            player.play();
+        }
+    </script>
+    <table width="100%">
+        <tbody>
+            <tr>
+                <td width="60%"><h2 style="margin:0">Winx Club</h2><b id="nowplaying"> Выберите трек для воспроизведения </b></td>
+                <td width="40%"><audio controls id="player" style="width:100%" src=""></audio></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <a href="../../index.html" style="text-decoration: none">Назад</a>
+    <hr>
+    <div id="playlist" style="overflow: auto;">
+        <a href="../../music/winxclub/Elisa Rosselli/all-is-magic.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../../music/winxclub/Elisa Rosselli/all-is-magic.mp3`, event);">Elisa Rosselli - all is magic</a><br>
+        <a href="../../music/winxclub/Elisa Rosselli/elisa-rosselli-love-is-all-around.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../../music/winxclub/Elisa Rosselli/elisa-rosselli-love-is-all-around.mp3`, event);">Elisa Rosselli - love is all around</a><br>
+        <a href="../../music/winxclub/Elisa Rosselli/elisa-rosselli-magnifiche-winx.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../../music/winxclub/Elisa Rosselli/elisa-rosselli-magnifiche-winx.mp3`, event);">Elisa Rosselli - magnifiche winx</a><br>
+        <a href="../../music/winxclub/Elisa Rosselli/elisa-rosselli-so-wonderful-winx.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../../music/winxclub/Elisa Rosselli/elisa-rosselli-so-wonderful-winx.mp3`, event);">Elisa Rosselli - so wonderful winx</a><br>
+        <a href="../../music/winxclub/Elisa Rosselli/elisa-rosselli-superheroes.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../../music/winxclub/Elisa Rosselli/elisa-rosselli-superheroes.mp3`, event);">Elisa Rosselli - superheroes</a><br>
+        <a href="../../music/winxclub/Elisa Rosselli/elisa-rosselli-tynix.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../../music/winxclub/Elisa Rosselli/elisa-rosselli-tynix.mp3`, event);">Elisa Rosselli - tynix</a><br>
+        <a href="../../music/winxclub/Elisa Rosselli/elisa-rosselli-you-re-the-one.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../../music/winxclub/Elisa Rosselli/elisa-rosselli-you-re-the-one.mp3`, event);">Elisa Rosselli - you re the one</a><br>
+        <a href="../../music/winxclub/Elisa Rosselli/heart-of-stone.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../../music/winxclub/Elisa Rosselli/heart-of-stone.mp3`, event);">Elisa Rosselli - heart-of-stone</a><br>
+        <a href="../../music/winxclub/Elisa Rosselli/rosselli-elisa-enchantix.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../../music/winxclub/Elisa Rosselli/rosselli-elisa-enchantix.mp3`, event);">Elisa Rosselli - enchantix</a><br>
+        <a href="../../music/winxclub/Winx Club Rus - Беливикс.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../../music/winxclub/Winx Club Rus - Беливикс.mp3`, event);">Winx Club Rus - Беливикс</a><br>
+    </div>
+    <p align="left">
+    <hr>
+    </body>
+</html>
