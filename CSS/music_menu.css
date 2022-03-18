@@ -1,0 +1,43 @@
+.zag {
+    position: relative;
+    top: 30px;
+ }
+.btn {
+    position: relative;
+    left: 80px;
+    top: 70px;
+ }
+ .btn_style1 {
+    font-size:larger;
+    border-radius: 20px;
+    color: #3cc9ec;
+    background-color: white;
+    background-size: 48px 48px;
+ }
+ .btn_style1:hover {
+    background-size: 36px 36px;
+ }
+ .btn_style2 {
+    position: relative;
+    top: 15px;
+    font-size:larger;
+    border-radius: 20px;
+    color: #3cc9ec;
+    background-color: white;
+    background-size: 48px 48px;
+ }
+ .btn_style2:hover {
+    background-size: 36px 36px;
+ }
+ .btn_style3 {
+    position: relative;
+    top: 30px;
+    font-size:larger;
+    border-radius: 20px;
+    color: #3cc9ec;
+    background-color: white;
+    background-size: 48px 48px;
+ }
+ .btn_style3:hover {
+    background-size: 36px 36px;
+ }

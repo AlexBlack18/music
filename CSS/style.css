@@ -5,45 +5,66 @@
     transition: .5s ease-in-out;
     /* добавим плавность переходов для всех элементов страницы*/
  }
+ body {
+   background-color: azure;
+   font-family: 'Open Sans', arial, sans-serif;
+   font-size: 14px;
+   line-height: 1;
+   color: #373737;
+   padding-left: 15px;
+   padding-right: 15px;
+   max-width: 1170px;
+   margin: 0 auto;
+   position: relative;
+}
  ul {
     list-style: none;
  }
  a {
     text-decoration: none;
     outline: none;
+    font-family: 'Hubballi', cursive;
  }
  h1 {
     font-family: 'Playfair Display';
     font-weight: normal;
     letter-spacing: 1px;
+    font-family: 'Hubballi', cursive;
  }
- body {
+ hr {
     font-family: 'Open Sans', arial, sans-serif;
     font-size: 14px;
     line-height: 1;
     color: #373737;
-    background: url(resources/фон.jpg) repeat-y;
- }
- /* добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов */
- header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after {
-    content: "";
-    display: table;
-    clear: both;
- }
- /* стилевой класс, который управляет шириной контейнера сетки*/
- .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;
     margin: 0 auto;
-    width: 100%;
-    max-width: 960px;
-    padding: 0 15px;
+    position: relative;
  }
  table {
-    width: 100%;
     background: rgb(0, 217, 255);
-    box-shadow: 3px 3px 1px rgba(0, 0, 0, .05);
     padding: 15px 0;
     margin-bottom: 30px;
-    position: sticky;
+ }
+ .info {
+   position: relative;
+   left: 80px;
+ }
+ .player {
+   position: relative;
+   right: 50px;
+ }
+ .btn_back {
+    position: relative;
+    left: 50px;
+    top: -10px;
+    font-size:larger;
+ }
+ .playlist {
+    position: absolute;
+    left: 50px;
+    right: 10px;
  }
  audio {
      width: 100%;

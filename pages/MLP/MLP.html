@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Little Pony</title>
         <link rel="shortcut icon" href="../../icon/MLP/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="../../CSS/style.css">
+        <link rel="stylesheet" href="../../CSS/mlp.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="icon/music/favicon.ico" type="image/x-icon">
     </head>
     <body>
-    </table>
     <script>
         function cm(file, event){
             document.getElementById('nowplaying').innerText = event.srcElement.innerText;
@@ -18,15 +25,14 @@
     <table width="100%">
         <tbody>
             <tr>
-                <td width="60%"><h2 style="margin:0">My Little Pony</h2><b id="nowplaying"> Выберите трек для воспроизведения </b></td>
-                <td width="40%"><audio controls id="player" style="width:100%" src=""></audio></td>
+                <td class="info" width="60%"><h2 style="margin:0">My Little Pony</h2><b id="nowplaying"> Выберите трек для воспроизведения </b></td>
+                <td class="player" width="40%"><audio controls id="player" style="width:100%" src=""></audio></td>
             </tr>
         </tbody>
     </table>
-    <hr>
-    <a href="../../index.html" style="text-decoration: none">Назад</a>
-    <hr>
-    <div id="playlist" style="overflow: auto;">
+    <a class="btn_back" href="../../index.html" style="text-decoration: none">Назад</a>
+    <div class="head_player">
+    <div class="playlist" id="playlist">
         <a href="../../music/MLP/01 - My Little Pony - We Got This Together.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../../music/MLP/01 - My Little Pony - We Got This Together.mp3`, event);">01 - My Little Pony - We Got This Together</a><br>
         <a href="../../music/MLP/02 - My Little Pony - I'm the Friend You Need.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../../music/MLP/02 - My Little Pony - I'm the Friend You Need.mp3`, event);">02 - My Little Pony - I'm the Friend You Need</a><br>
         <a href="../../music/MLP/03 - My Little Pony - Time To Be Awesome.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../../music/MLP/03 - My Little Pony - Time To Be Awesome.mp3`, event);">03 - My Little Pony - Time To Be Awesome</a><br>
@@ -53,6 +59,6 @@
         <a href="../../music/MLP/[PMV] Дружбы Свет.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../../music/MLP/[PMV] Дружбы Свет.mp3`, event);">[PMV] Дружбы Свет</a><br>
     </div>
     <p align="left">
-    <hr>
+    </div>
     </body>
 </html>

@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Winx Club</title>
         <link rel="shortcut icon" href="../../icon/winxclub/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="../../CSS/style.css">
     </head>
     <body>
-    </table>
-    <script>
-        function cm(file, event){
-            document.getElementById('nowplaying').innerText = event.srcElement.innerText;
-            const player = document.getElementById('player')
-            player.src=file;
-            player.play();
-        }
-    </script>
-    <table width="100%">
-        <tbody>
-            <tr>
-                <td width="60%"><h2 style="margin:0">Winx Club</h2><b id="nowplaying"> Выберите трек для воспроизведения </b></td>
-                <td width="40%"><audio controls id="player" style="width:100%" src=""></audio></td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <a href="../../index.html" style="text-decoration: none">Назад</a>
-    <hr>
-    <div id="playlist" style="overflow: auto;">
+        <script>
+            function cm(file, event){
+                document.getElementById('nowplaying').innerText = event.srcElement.innerText;
+                const player = document.getElementById('player')
+                player.src=file;
+                player.play();
+            }
+        </script>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td class="info" width="60%"><h2 style="margin:0">Winx Club</h2><b id="nowplaying"> Выберите трек для воспроизведения </b></td>
+                    <td class="player" width="40%"><audio controls id="player" style="width:100%" src=""></audio></td>
+                </tr>
+            </tbody>
+        </table>
+        <a class="btn_back" href="../../index.html" style="text-decoration: none">Назад</a>
+        <div class="head_player">
+        <div class="playlist" id="playlist">
         <a href="../../music/winxclub/Elisa Rosselli/all-is-magic.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../../music/winxclub/Elisa Rosselli/all-is-magic.mp3`, event);">Elisa Rosselli - all is magic</a><br>
         <a href="../../music/winxclub/Elisa Rosselli/elisa-rosselli-love-is-all-around.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../../music/winxclub/Elisa Rosselli/elisa-rosselli-love-is-all-around.mp3`, event);">Elisa Rosselli - love is all around</a><br>
         <a href="../../music/winxclub/Elisa Rosselli/elisa-rosselli-magnifiche-winx.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../../music/winxclub/Elisa Rosselli/elisa-rosselli-magnifiche-winx.mp3`, event);">Elisa Rosselli - magnifiche winx</a><br>
@@ -38,7 +39,7 @@
         <a href="../../music/winxclub/Elisa Rosselli/rosselli-elisa-enchantix.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../../music/winxclub/Elisa Rosselli/rosselli-elisa-enchantix.mp3`, event);">Elisa Rosselli - enchantix</a><br>
         <a href="../../music/winxclub/Winx Club Rus - Беливикс.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../../music/winxclub/Winx Club Rus - Беливикс.mp3`, event);">Winx Club Rus - Беливикс</a><br>
     </div>
+    </div>
     <p align="left">
-    <hr>
     </body>
 </html>
