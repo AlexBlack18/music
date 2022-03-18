@@ -1,13 +1,38 @@
+*, *:after, *:before {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   transition: .5s ease-in-out;
+   /* добавим плавность переходов для всех элементов страницы*/
+}
+body {
+  background-color: azure;
+  font-family: 'Hubballi', cursive;
+  font-size: 14px;
+  line-height: 1;
+  color: #373737;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+a {
+   text-decoration: none;
+   outline: none;
+   font-family: 'Hubballi', cursive;
+}
 .zag {
     position: relative;
-    top: 30px;
+    top: 45px;
  }
 .btn {
     position: relative;
-    left: 80px;
-    top: 70px;
+    top: 100px;
  }
  .btn_style1 {
+    padding-left: 15px;
+    padding-right: 15px;
     font-size:larger;
     border-radius: 20px;
     color: #3cc9ec;
@@ -18,26 +43,92 @@
     background-size: 36px 36px;
  }
  .btn_style2 {
+    padding-left: 15px;
+    padding-right: 15px;
     position: relative;
-    top: 15px;
     font-size:larger;
     border-radius: 20px;
     color: #3cc9ec;
     background-color: white;
     background-size: 48px 48px;
+    margin-left: 20px;
  }
  .btn_style2:hover {
     background-size: 36px 36px;
  }
  .btn_style3 {
+    padding-left: 15px;
+    padding-right: 15px;
     position: relative;
-    top: 30px;
     font-size:larger;
     border-radius: 20px;
     color: #3cc9ec;
     background-color: white;
     background-size: 48px 48px;
+    margin-left: 20px;
  }
  .btn_style3:hover {
     background-size: 36px 36px;
+ }
+ .background_image {
+    position: absolute;
+    left: 296px;
+    top: 200px;
+ }
+ @media (max-width: 700px) {
+   .zag {
+      position: relative;
+      top: 45px;
+      font-size:xx-small;
+   } 
+   .btn_style1 {
+      position: relative;
+      left: 70px;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size:larger;
+      border-radius: 20px;
+      color: #3cc9ec;
+      background-color: white;
+      background-size: 48px 48px;
+      
+    }
+    .btn_style1:hover {
+      background-size: 36px 36px;
+    }
+    .btn_style2 {
+      top: 50px;
+      left: -80px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      font-size:larger;
+      border-radius: 20px;
+      color: #3cc9ec;
+      background-color: white;
+      background-size: 48px 48px;
+      margin-left: 20px;
+   }
+   .btn_style2:hover {
+      background-size: 36px 36px;
+   }
+    .btn_style3 {
+      top: 80px;
+      left: -10px;
+      padding-left: 60px;
+      padding-right: 60px;
+      position: relative;
+      font-size:larger;
+      border-radius: 20px;
+      color: #3cc9ec;
+      background-color: white;
+      background-size: 48px 48px;
+      margin-left: 20px;
+   }
+   .btn_style3:hover {
+      background-size: 36px 36px;
+   }
+   .background_image {
+      display: none;
+   }
  }

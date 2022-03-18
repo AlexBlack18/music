@@ -69,8 +69,37 @@
     position: absolute;
     left: 50px;
     right: 10px;
+    line-height: 23px;
  }
  audio {
      width: 100%;
      position: sticky;
+ }
+ @media (max-width: 700px) {
+   table {
+      background: rgb(0, 217, 255);
+      padding: 60px 0;
+      margin-bottom: 30px;
+   }
+    .info {
+      position: absolute;
+      top: 20px;
+      left: 50px;
+    }
+    .player {
+      position: relative;
+      top: 40px;
+      right: 20px;
+      width: 90%;
+    }
+    .btn_back {
+      position: relative;
+      font-size:larger;
+    }
+    .playlist {
+      position: absolute;
+      left: 50px;
+      right: 10px;
+      line-height: 30px;
+   }
  }
