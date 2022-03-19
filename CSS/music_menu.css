@@ -25,10 +25,12 @@ a {
 .zag {
     position: relative;
     top: 45px;
+    text-align: center;
  }
 .btn {
     position: relative;
     top: 100px;
+    text-align: center;
  }
  .btn_style1 {
     padding-left: 15px;
@@ -80,10 +82,12 @@ a {
       position: relative;
       top: 45px;
       font-size:xx-small;
+      text-align: center;
    } 
    .btn_style1 {
       position: relative;
       left: 70px;
+      text-align: center;
       padding-left: 15px;
       padding-right: 15px;
       font-size:larger;
@@ -99,6 +103,7 @@ a {
     .btn_style2 {
       top: 50px;
       left: -80px;
+      text-align: center;
       padding-left: 15px;
       padding-right: 15px;
       position: relative;
@@ -115,6 +120,7 @@ a {
     .btn_style3 {
       top: 80px;
       left: -10px;
+      text-align: center;
       padding-left: 60px;
       padding-right: 60px;
       position: relative;
