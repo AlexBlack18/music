@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta content='true' name='HandheldFriendly'/>
+        <meta content='width' name='MobileOptimized'/>
+        <meta content='yes' name='apple-mobile-web-app-capable'/>
+        <title>My Little Pony</title>
+        <link rel="shortcut icon" href="../icon/MLP/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    </head>
+    <body>
+        <script>
+            function cm(file, event){
+                document.getElementById('nowplaying').innerText = event.srcElement.innerText;
+                const player = document.getElementById('player')
+                player.src=file;
+                player.play();
+            }
+        </script>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td class="info" width="60%"><h2 style="margin:0">My Little Pony</h2><b class="nowplaying" id="nowplaying"> Выберите трек для воспроизведения </b></td>
+                    <td class="player"><audio controls controlsList="nodownload noplaybackrate" id="player" src=""></audio></td>
+                </tr>
+            </tbody>
+        </table>
+        <a class="btn_back" href="../index.html" style="text-decoration: none">Назад</a>
+        <div class="head_player">
+        <div class="playlist" id="playlist">
+        <a href="../music/MLP/01 - My Little Pony - We Got This Together.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/01 - My Little Pony - We Got This Together.mp3`, event);">01 - My Little Pony - We Got This Together</a><br>
+        <a href="../music/MLP/02 - My Little Pony - I'm the Friend You Need.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/02 - My Little Pony - I'm the Friend You Need.mp3`, event);">02 - My Little Pony - I'm the Friend You Need</a><br>
+        <a href="../music/MLP/03 - My Little Pony - Time To Be Awesome.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/03 - My Little Pony - Time To Be Awesome.mp3`, event);">03 - My Little Pony - Time To Be Awesome</a><br>
+        <a href="../music/MLP/04 - My Little Pony - One Small Thing.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/04 - My Little Pony - One Small Thing.mp3`, event);">04 - My Little Pony - One Small Thing</a><br>
+        <a href="../music/MLP/05 - My Little Pony - Open Up Your Eyes.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/05 - My Little Pony - Open Up Your Eyes.mp3`, event);">05 - My Little Pony - Open Up Your Eyes</a><br>
+        <a href="../music/MLP/06 - My Little Pony - Rainbow.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/06 - My Little Pony - Rainbow.mp3`, event);">06 - My Little Pony - Rainbow</a><br>
+        <a href="../music/MLP/07 - My Little Pony - Off To See the World.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/07 - My Little Pony - Off To See the World.mp3`, event);">07 - My Little Pony - Off To See the World</a><br>
+        <a href="../music/MLP/Equestria Girls (Seaso... - Im on a Yacht (Mane 7).mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/Equestria Girls (Seaso... - Im on a Yacht (Mane 7).mp3`, event);">Equestria Girls - Im on a Yacht (Mane 7)</a><br>
+        <a href="../music/MLP/Equestria Girls (Seaso... - Run to Break Free (Rai.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/Equestria Girls (Seaso... - Run to Break Free (Rai.mp3`, event);">Equestria Girls - Run to Break Free</a><br>
+        <a href="../music/MLP/Equestria Girls - EG Original Theme - FULL.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/Equestria Girls - EG Original Theme - FULL.mp3`, event);">Equestria Girls - Original Theme - FULL</a><br>
+        <a href="../music/MLP/MLP - Fit Right In (Shes All.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/MLP - Fit Right In (Shes All.mp3`, event);">MLP - Fit Right In</a><br>
+        <a href="../music/MLP/MLP EG - Rainbow Rocks - Battle (v1 Full Demo).mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/MLP EG - Rainbow Rocks - Battle (v1 Full Demo).mp3`, event);">MLP EG - Rainbow Rocks - Battle (v1 Full Demo)</a><br>
+        <a href="../music/MLP/MLP__Equestria_Girls_Russia_-_Караоке.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/MLP__Equestria_Girls_Russia_-_Караоке.mp3`, event);">MLP Equestria Girls Russia - Караоке</a><br>
+        <a href="../music/MLP/My_Little_Pony_Equestria_Girls_'Rainbow_Rocks'_Rainbooms_Remix_Sing.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/My_Little_Pony_Equestria_Girls_'Rainbow_Rocks'_Rainbooms_Remix_Sing.mp3`, event);">MLP Equestria Girls Rainbooms Remix Sing</a><br>
+        <a href="../music/MLP/pmv-g5-u-izzi-viutsia-kudri.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/pmv-g5-u-izzi-viutsia-kudri.mp3`, event);">pmv g5 У Иззи вьются кудри</a><br>
+        <a href="../music/MLP/Silva hound  Emi Jones - Infinity  и  Beyond.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/Silva hound  Emi Jones - Infinity  и  Beyond.mp3`, event);">Silva hound  Emi Jones - Infinity  и  Beyond</a><br>
+        <a href="../music/MLP/Silva hound  и  Jyc Row - The Magic Flicker (fea.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/Silva hound  и  Jyc Row - The Magic Flicker (fea.mp3`, event);">Silva hound  и  Jyc Row - The Magic Flicker</a><br>
+        <a href="../music/MLP/Silva hound - Glimmer Time.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/Silva hound - Glimmer Time.mp3`, event);">Silva hound - Glimmer Time</a><br>
+        <a href="../music/MLP/Silva hound feat Giggl... - Nine Years (feat Giggl.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/Silva hound feat Giggl... - Nine Years (feat Giggl.mp3`, event);">Silva hound - Nine Years</a><br>
+        <a href="../music/MLP/UndreamedPanic - The Quest For Kindness.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/UndreamedPanic - The Quest For Kindness.mp3`, event);">UndreamedPanic - The Quest For Kindness</a><br>
+        <a href="../music/MLP/«Shake_Things_Up»_Официальное_музыкальное_видео_MLP_Equestria_Girls.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/«Shake_Things_Up»_Официальное_музыкальное_видео_MLP_Equestria_Girls.mp3`, event);">MLP Equestria Girls - Shake Things Up</a><br>
+        <a href="../music/MLP/На_яхте_Spring_Breakdown_Music_Video_🛥_MLP_Equestria_Girls_Russia.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/На_яхте_Spring_Breakdown_Music_Video_🛥_MLP_Equestria_Girls_Russia.mp3`, event);">MLP Equestria Girls - На яхте Spring</a><br>
+        <a href="../music/MLP/[PMV] Горжусь быть Брони.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/[PMV] Горжусь быть Брони.mp3`, event);">[PMV] Горжусь быть Брони</a><br>
+        <a href="../music/MLP/[PMV] Дружбы Свет.mp3" style="text-decoration: none" download>📥 </a><a href="#" onclick="event.preventDefault(); cm(`../music/MLP/[PMV] Дружбы Свет.mp3`, event);">[PMV] Дружбы Свет</a><br>
+    </div>
+    <p align="left">
+    </div>
+    </body>
+</html>
